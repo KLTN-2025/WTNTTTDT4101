@@ -1,79 +1,64 @@
-# Hệ Thống Trắc Nghiệm Online
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-[![Build Status](https://travis-ci.org/meesudzu/trac-nghiem-online.svg?branch=master)](https://travis-ci.org/meesudzu/trac-nghiem-online)
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Mục tiêu: Xây dựng hệ thống trắc nghiệm online cho các trường THPT THCS, thay thế cách thức làm bài tập và kiểm tra truyền thống
+## About Laravel
 
-## Thông Tin
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-Dự án được phát triển và chia sẻ với mục đích phi lợi nhuận.  
-Bản quyền thuộc [MIT License](LICENSE)  
-Cảm ơn các bạn đã giúp chia sẻ sản phẩm đến các diễn đàn, cộng đồng, groups facebook... Mình rất vui và cảm ơn khi các bạn làm điều đó. Tuy nhiên, hy vọng các bạn có thể ghi rõ bản quyền và link đến github chính thức của dự án để mọi người có thể biết đến và dễ dàng cập nhật phiên bản mới của sản phẩm.  
-Chân thành cảm ơn những email đóng góp ý kiến và báo lỗi của mọi người. Hy vọng sẽ ngày càng nhận được nhiều hơn nữa những email góp ý, nhất là những người đang làm và tiếp xúc trực tiếp với môi trường giáo dục. Một lần nữa, chân thành cảm ơn mọi người.  
-Nếu bạn cảm thấy sản phẩm hữu ích, có thể nhấn nút "**Star**" ở phía trên bên phải cho dự án. Nếu bạn là một lập trình viên và muốn đóng góp phát triển cho dự án, đừng ngần ngại mà hãy nhấn nút "**Fork**", github và cộng đồng sẽ ghi nhớ và ghi nhận đóng góp của bạn.  
-Mọi đóng góp xin liên hệ email tác giả.  
-Dự án có sử dụng một số sản phẩm mã nguồn mở:  
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
--   <https://github.com/Dogfalo/materialize>  
--   <https://github.com/DataTables/DataTables>  
--   <https://github.com/PHPMailer/PHPMailer>
--   <https://github.com/PHPOffice/PhpSpreadsheet>
--   <https://github.com/mathjax/MathJax>
--   <https://github.com/ckeditor/ckeditor-dev>
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Thanks to [@Dogfalo](https://github.com/Dogfalo) [@DataTables](https://github.com/DataTables) [@PHPMailer](https://github.com/PHPMailer) [@PHPOffice](https://github.com/PHPOffice) [@mathjax](https://github.com/mathjax) [@ckeditor](https://github.com/ckeditor)  
+## Learning Laravel
 
-## Tính Năng
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-    - Dễ dàng cài đặt và quản lý, không cần kiến thức lập trình
-    - Giao diện làm bài trực quan, hỗ trợ hiển thị công thức LaTeX
-    - Tự động lưu trạng thái làm bài của học sinh, thoát ra vào lại không bị mất bài đang làm
-    - Có thể xem điểm và xem lại bài thi sau khi nộp bài
-    - Hỗ trợ nhập công thức bằng LaTeX
-    - Hỗ trợ nhập liệu bằng file Excel
-    - Có thể xuất file Excel điểm của từng bài thi
-    - Câu hỏi phân loại theo mức độ: dễ, khó, trung bình, và phân loại theo chương: 1, 2, 3,...
-    - ...  
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Còn rất nhiều tính năng nữa mà mình không thể liệt kê hết được, mọi người tự trải nghiệm nhé.  
+## Laravel Sponsors
 
-Xem thêm tại [CHANGELOG](CHANGELOG.md)  
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-## Sắp Có
+### Premium Partners
 
-    - Thêm tùy chọn nhập bộ câu hỏi từ file word.
-    - Giáo viên có thể thêm câu hỏi vào ngân hàng đề (admin sẽ duyệt câu hỏi)
-    - Thêm người dùng mới "Giáo viên bộ môn"
-    - Hiển thị số tin nhắn chat, thông báo chưa đọc
-    - Thêm tự động cập nhật phiên bản phần mềm
-    - Thêm logs lưu vết tất cả các thông tin liên quan đến việc thay đổi dữ liệu trong cơ sở dữ liệu
-    - Thêm nhiều dạng bài tập trắc nghiệm hơn
-    - Hỡ trợ nhiều dạng thông tin có trong câu hỏi hơn như âm thanh, video...
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-[Hướng dẫn sử dụng](GUIDE.md)
+## Contributing
 
-## Ảnh Demo (Chụp Từ v3.3.0)
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-![INSTALL](demo-images/install.png)
-![Đăng nhập 1](demo-images/login-1.PNG)
-![Đăng nhập 2](demo-images/login-2.PNG)
-![DEMO](demo-images/1.png)
-![DEMO](demo-images/4.1.png)
-![DEMO](demo-images/4.2.png)
-![DEMO](demo-images/4.3.png)
-![DEMO](demo-images/2.png)
-![DEMO](demo-images/3.png)
-![DEMO](demo-images/5.png)
-![DEMO](demo-images/6.png)
-![DEMO](demo-images/7.png)
-![DEMO](demo-images/9.png)
-![DEMO](demo-images/8.png)
-![DEMO](demo-images/10.png)
-![DEMO](demo-images/11.png)
-![DEMO](demo-images/12.png)
+## Code of Conduct
 
-## Lưu ý
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-Trên GitHub chỉ lưu từ v2.0.1 trở đi.  
-v2.0 (19/09/2017)  
-v1.0 (16/05/2017)
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
